@@ -58,3 +58,15 @@ export const TETROMINOS = {
         color: '227, 78, 78',
     },
 }
+
+export const randomTetromino = () => {
+    const tetrominos = 'IJLOSTZ';
+    const randomTetromino = 
+        tetrominos[Math.floor(Math.random() * tetrominos.length)];
+    return TETROMINOS[randomTetromino];
+}
+
+// this function is a fairly straight forward/common method for generating a object, number, element
+// from a given set. We first are assigning a constant to the name values of each object we created.
+// 'IJLOSTZ'. Then we are assigning the variable randomTetromino which is randomly generating a value
+// using the Math.random() method
